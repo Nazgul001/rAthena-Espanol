@@ -1,6 +1,11 @@
 moc_para01,37,95,3	script	Gelkah	951,{
 
 		if (BaseLevel < 100 || BaseLevel > 110) {
+			mes .@nombre$;
+			mes "No tienes aun el nivel para formar parte de el ^CC0000Grupo Paradise^000000.";
+			mes "Sube tu nivel base a 100 para poder asignarte misiones.";
+			close;
+		}
 		set	.@nombre$,"[^0065DFGelkah^000000]";
 			
 			mes .@nombre$;
@@ -27,7 +32,7 @@ moc_para01,37,95,3	script	Gelkah	951,{
 			mes "Espero esto haya servidor de ayuda para saber a lo que nos dedicamos en el ^CC0000Grupo Paradise^000000.";
 			close;
 		
-		case 2;
+		case 2:
 			mes .@nombre$;
 			mes "Asi que haz decidido ser un miembro del ^CC0000Grupo Paradise^000000, estas seguro de esto?";
 			next;
@@ -64,15 +69,7 @@ moc_para01,37,95,3	script	Gelkah	951,{
 		case 3:
 			mes .@nombre$;
 			mes "Vuelve cuando quieras ^008888" + strcharinfo(0) + "^000000";
-			close;			
-
-		}else{
-			mes .@nombre$;
-			mes "No tienes aun el nivel para formar parte de el ^CC0000Grupo Paradise^000000.";
-			mes "Sube tu nivel base a 100 para poder asignarte misiones.";
 			close;
-
-			}
 		}
 	}
 }
