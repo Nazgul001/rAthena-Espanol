@@ -1,6 +1,5 @@
 moc_para01,37,95,3	script	Gelkah	951,{
 
-	if(BaseLevel < 91 || BaseLevel > 99){
 		set	.@nombre$,"[^0065DFGelkah^000000]";
 			
 			mes .@nombre$;
@@ -31,7 +30,7 @@ moc_para01,37,95,3	script	Gelkah	951,{
 			mes .@nombre$;
 			mes "Asi que haz decidido ser un miembro del ^CC0000Grupo Paradise^000000, estas seguro de esto?";
 			next;
-						switch(select("Si, ya traigo los items.:No, aun no consigo los items.)){
+				switch(select("Si, ya traigo los items.:No, aun no consigo los items.)){
 						
 					case 1:
 							mes .@nombre$;
@@ -65,7 +64,6 @@ moc_para01,37,95,3	script	Gelkah	951,{
 			mes .@nombre$;
 			mes "Vuelve cuando quieras ^008888" + strcharinfo(0) + "^000000";
 			close;			
-			}
 		}
 	}
 }
