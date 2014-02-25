@@ -33,7 +33,7 @@ moc_para01,37,95,3	script	Gelkah	951,{
 			next;
 						switch(select("Si, ya traigo los items.:No, aun no consigo los items.)){
 						
-					case 1;
+					case 1:
 							mes .@nombre$;
 							mes "Exelente, ya veo ese fuego en tus ojos para comenzar las misiones.";
 							mes "Bueno a lo que nos truje, revisare si cumples con los requisitos.";
@@ -51,15 +51,11 @@ moc_para01,37,95,3	script	Gelkah	951,{
 							mes "Bien, necesito que hables con ^3333FFRohtert^000000, debe de estar por aqui.";
 							close;
 							
-				}else{
-					mes .@nombre$;
-					mes "Esta bien, aqui estare cuando consigas los ^FF000050 Brigan^000000";
-					close;
-							
-				
-							
-			close;
-			}
+					case2;
+							mes .@nombre$;
+							mes "Esta bien, aqui estare cuando consigas los ^FF000050 Brigan^000000";
+							close;
+					}
 		case 3:
 			mes .@nombre$;
 			mes "Vuelve cuando quieras ^008888" + strcharinfo(0) + "^000000";
