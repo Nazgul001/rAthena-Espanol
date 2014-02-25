@@ -19,14 +19,14 @@ moc_para01,37,95,3	script	Gelkah	951,{
 			next;
 			mes .@nombre$;
 			mes "que vayan en grupos. lo regular es que nos llaman para erradicar malezas, o limpiar el camino para mercaderes,";
-			mes "o simplemente hay una sobrepoblacion de mounstros y se requiere la limpieza.
+			mes "o simplemente hay una sobrepoblacion de mounstros y se requiere la limpieza.";
 			next;
 			mes .@nombre$;
 			mes "Todas las misiones son del tipo de cazeria, y ofrecemos una buena recompensa a todos aquellos los que la cumple.";
 			mes "Espero esto haya servidor de ayuda para saber a lo que nos dedicamos en el ^CC0000Grupo Paradise^000000.";
 			close;
 		
-		case 2;
+		case 2:
 			mes .@nombre$;
 			mes "salir";
 			close;
