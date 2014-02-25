@@ -50,6 +50,11 @@ moc_para01,37,95,3	script	Gelkah	951,{
 							mes .@nombre$;
 							mes "Bien, necesito que hables con ^3333FFRohtert^000000, debe de estar por aqui.";
 							close;
+						
+					}else{
+							mes .@nombre$;
+							mes "No estan completos, ve  junta los ^FF000050 Brigan^000000";
+							close;
 							
 					case2;
 							mes .@nombre$;
@@ -62,8 +67,3 @@ moc_para01,37,95,3	script	Gelkah	951,{
 			close;
 
 			
-			
-			}
-		}
-	}
-}
