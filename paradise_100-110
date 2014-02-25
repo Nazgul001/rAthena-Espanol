@@ -1,13 +1,14 @@
 moc_para01,37,95,3	script	Gelkah	951,{
 
 		if (BaseLevel < 100 || BaseLevel > 110) {
-			mes .@nombre$;
+		set	.@nombre$,"[^0065DFGelkah^000000]";
+		mes .@nombre$;
 			mes "No tienes aun el nivel para formar parte de el ^CC0000Grupo Paradise^000000.";
 			mes "Sube tu nivel base a 100 para poder asignarte misiones.";
 			close;
 		}
 		set	.@nombre$,"[^0065DFGelkah^000000]";
-			
+
 			mes .@nombre$;
 			mes "Hola ^008888" + strcharinfo(0) + "^000000, nosotros somos una parte del Grupo Eden claro mas especializados.";
 			mes "Somos el ^CC0000Grupo Paradise^000000.";
@@ -31,13 +32,13 @@ moc_para01,37,95,3	script	Gelkah	951,{
 			mes "Todas las misiones son del tipo de cazeria, y ofrecemos una buena recompensa a todos aquellos los que la cumple.";
 			mes "Espero esto haya servidor de ayuda para saber a lo que nos dedicamos en el ^CC0000Grupo Paradise^000000.";
 			close;
-		
+
 		case 2:
 			mes .@nombre$;
 			mes "Asi que haz decidido ser un miembro del ^CC0000Grupo Paradise^000000, estas seguro de esto?";
 			next;
 				switch(select("Si, ya traigo los items.:No, aun no consigo los items.")){
-						
+
 					case 1:
 							mes .@nombre$;
 							mes "Exelente, ya veo ese fuego en tus ojos para comenzar las misiones.";
@@ -49,18 +50,18 @@ moc_para01,37,95,3	script	Gelkah	951,{
 							delitem 7054,50;
 							next;
 							mes .@nombre$;
-							mes "Bien te dare el Courtesy Ticket para poder hacer una mision.":
+							mes "Bien te dare el Courtesy Ticket para poder hacer una mision.";
 							getitem 30001,1;
 							next;
 							mes .@nombre$;
 							mes "Bien, necesito que hables con ^3333FFRohtert^000000, debe de estar por aqui.";
 							close;
-						
+
 					}else{
 							mes .@nombre$;
 							mes "No estan completos, ve  junta los ^FF000050 Brigan^000000";
 							close;
-							
+
 					case2:
 							mes .@nombre$;
 							mes "Esta bien, aqui estare cuando consigas los ^FF000050 Brigan^000000";
