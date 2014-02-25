@@ -1,0 +1,39 @@
+moc_para01,37,95,3	script	Gelkah	951,{
+
+		set	.@nombre$,"[^0065DFGelkah^000000]";
+			
+			mes .@nombre$;
+			mes "Hola ^008888" + strcharinfo(0) + "^000000, nosotros somos una parte del Grupo Eden claro mas especializados.";
+			mes "Somos el ^CC0000Grupo Paradise^000000.";
+			mes "Por lo tanto nuestras misiones son potencialmente mas peligrosas.";
+			next;
+					switch(select("Informacion.:Items:Salir.")) {
+		case 1:
+			mes .@nombre$;
+			mes "Es necesario tener un ^CC0000Nivel base 100 como minimo y maximo 110^000000, para poder registrate las misiones.";
+			mes "Tambien sera necesario que me traigas ^CC000050Brigan^000000, a cambio te dare un ^CC000050Courtesy Ticket^000000.";
+			next;
+			mes .@nombre$;
+			mes "Los lugares que requieren nuestros servicios son: Glast Heim, Ash Vacuum, Ice Dungeon, Magma Dungeon, entre otros";
+			mes "lugares que requieren de nuestra asistencia, es peligroso ir solo a esas misiones, por eso les aconsejamos";
+			next;
+			mes .@nombre$;
+			mes "que vayan en grupos. lo regular es que nos llaman para erradicar malezas, o limpiar el camino para mercaderes,";
+			mes "o simplemente hay una sobrepoblacion de mounstros y se requiere la limpieza.
+			next;
+			mes .@nombre$;
+			mes "Todas las misiones son del tipo de cazeria, y ofrecemos una buena recompensa a todos aquellos los que la cumple.";
+			mes "Espero esto haya servidor de ayuda para saber a lo que nos dedicamos en el ^CC0000Grupo Paradise^000000.";
+			close;
+		
+		case 2;
+			mes .@nombre$;
+			mes "salir";
+			close;
+			
+		case 3:
+			mes .@nombre$;
+			mes "Vuelve cuando quieras ^008888" + strcharinfo(0) + "^000000";
+			close;
+		}
+}
